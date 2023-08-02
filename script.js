@@ -7,7 +7,7 @@ let hum = function(number) {
     //кейс для чисел <10
     if (arrayFromStrNumber.length === 1) {
         if(arrayFromStrNumber[0] === '0') {
-            string += ""
+            string += "zero"
         } else {
             // string += transition(arrayFromStrNumber[i]);
             switch(arrayFromStrNumber[0]) {
@@ -102,38 +102,39 @@ let hum = function(number) {
                             break;
                         }
                     }
+                    return string;
                 } else {
                     switch (arrayFromStrNumber[i]) {
                         case '2': {
-                            string += 'twenty '
+                            string += 'twenty'
                             break;
                         }
                         case '3': {
-                            string += 'thirty '
+                            string += 'thirty'
                             break;
                         }
                         case '4': {
-                            string += 'forty '
+                            string += 'forty'
                             break;
                         }
                         case '5': {
-                            string += 'fifty '
+                            string += 'fifty'
                             break;
                         }
                         case '6': {
-                            string += 'sixty '
+                            string += 'sixty'
                             break;
                         }
                         case '7': {
-                            string += 'seventy '
+                            string += 'seventy'
                             break;
                         }
                         case '8': {
-                            string += 'eighty '
+                            string += 'eighty'
                             break;
                         }
                         case '9': {
-                            string += 'ninety '
+                            string += 'ninety'
                             break;
                         }
                     }
@@ -147,39 +148,39 @@ let hum = function(number) {
                     // string += transition(arrayFromStrNumber[i]);
                     switch(arrayFromStrNumber[i]) {
                         case '1': {
-                            string += 'one';
+                            string += ' one';
                             break;
                         }
                         case '2': {
-                            string += 'two';
+                            string += ' two';
                             break;
                         }
                         case '3': {
-                            string += 'three';
+                            string += ' three';
                             break;
                         }
                         case '4': {
-                            string += 'four';
+                            string += ' four';
                             break;
                         }
                         case '5': {
-                            string += 'five';
+                            string += ' five';
                             break;
                         }
                         case '6': {
-                            string += 'six';
+                            string += ' six';
                             break;
                         }
                         case '7': {
-                            string += 'seven';
+                            string += ' seven';
                             break;
                         }
                         case '8': {
-                            string += 'eight';
+                            string += ' eight';
                             break;
                         }
                         case '9': {
-                            string += 'nine';
+                            string += ' nine';
                             break;
                         }
                     }
@@ -195,7 +196,7 @@ let hum = function(number) {
             //обработка разряда сотых
             if(i === 0) {
                 string += transition(arrayFromStrNumber[i]);
-                string += ' hundred '
+                string += ' hundred'
             } 
             //обработка разряда десятков
             if(i === 1) {
@@ -204,78 +205,79 @@ let hum = function(number) {
                 } else if (arrayFromStrNumber[i] === '1') {
                     switch(arrayFromStrNumber[i+1]) {
                         case '0': {
-                            string += 'ten';
+                            string += ' ten';
                             break;
                         }
                         case '1': {
-                            string += 'eleven';
+                            string += ' eleven';
                             break;
                         }
                         case '2': {
-                            string += 'twelve'
+                            string += ' twelve'
                             break;
                         }
                         case '3': {
-                            string += 'thirteen'
+                            string += ' thirteen'
                             break;
                         }
                         case '4': {
-                            string += 'fourteen'
+                            string += ' fourteen'
                             break;
                         }
                         case '5': {
-                            string += 'fifteen'
+                            string += ' fifteen'
                             break;
                         }
                         case '6': {
-                            string += 'sixteen'
+                            string += ' sixteen'
                             break;
                         }
                         case '7': {
-                            string += 'seventeen'
+                            string += ' seventeen'
                             break;
                         }
                         case '8': {
-                            string += 'eighteen'
+                            string += ' eighteen'
                             break;
                         }
                         case '9': {
-                            string += 'nineteen'
+                            string += ' nineteen'
                             break;
                         }
                     }
+                    return string;
                 } else {
                     switch (arrayFromStrNumber[i]) {
                         case '2': {
-                            string += 'twenty '
+                            string += ' twenty'
                             break;
                         }
                         case '3': {
-                            string += 'thirty '
+                            string += ' thirty'
                             break;
                         }
                         case '4': {
-                            string += 'forty '
+                            string += ' forty'
                             break;
                         }
                         case '5': {
-                            string += 'fifty '
+                            string += ' fifty'
                             break;
                         }
                         case '6': {
-                            string += 'sixty '
+                            string += ' sixty'
                             break;
                         }
                         case '7': {
-                            string += 'seventy '
+                            string += ' seventy'
                             break;
                         }
                         case '8': {
-                            string += 'eighty '
+                            string += ' eighty'
                             break;
                         }
                         case '9': {
-                            string += 'ninety '
+                            string += ' ninety'
                             break;
                         }
                     }
@@ -289,39 +291,39 @@ let hum = function(number) {
                     // string += transition(arrayFromStrNumber[i]);
                     switch(arrayFromStrNumber[i]) {
                         case '1': {
-                            string += 'one';
+                            string += ' one';
                             break;
                         }
                         case '2': {
-                            string += 'two';
+                            string += ' two';
                             break;
                         }
                         case '3': {
-                            string += 'three';
+                            string += ' three';
                             break;
                         }
                         case '4': {
-                            string += 'four';
+                            string += ' four';
                             break;
                         }
                         case '5': {
-                            string += 'five';
+                            string += ' five';
                             break;
                         }
                         case '6': {
-                            string += 'six';
+                            string += ' six';
                             break;
                         }
                         case '7': {
-                            string += 'seven';
+                            string += ' seven';
                             break;
                         }
                         case '8': {
-                            string += 'eight';
+                            string += ' eight';
                             break;
                         }
                         case '9': {
-                            string += 'nine';
+                            string += ' nine';
                             break;
                         }
                     }
@@ -333,7 +335,6 @@ let hum = function(number) {
     return string
 }
 
-//функция трансформации чисел
 function transition(num) {
     switch(num) {
         case '1': {
@@ -365,23 +366,3 @@ function transition(num) {
         }
     }
 }
-
-
-
-
-
-// console.log(hum(10))
-// console.log(hum(43))
-// console.log(hum(143))
-// console.log(hum(312))
-// console.log(hum(511))
-// console.log(hum(620))
-// console.log(hum(100))
-// console.log(hum(111))
-// console.log(hum(115))
-// console.log(hum(350))
-
-console.log(hum(3))
-console.log(hum(23))
-console.log(hum(90))
-console.log(hum(523))
