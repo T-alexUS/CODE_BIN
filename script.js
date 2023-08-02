@@ -61,6 +61,10 @@ let hum = function(number) {
                     string += ""
                 } else if (arrayFromStrNumber[i] === '1') {
                     switch(arrayFromStrNumber[i+1]) {
+                        case '0': {
+                            string += 'ten';
+                            break;
+                        }
                         case '1': {
                             string += 'eleven';
                             break;
@@ -134,7 +138,7 @@ let hum = function(number) {
                         }
                     }
                 }           
-            
+            }
             //обработка разряда единиц
             if (i === 1) {
                 if(arrayFromStrNumber[i] === '0') {
@@ -180,7 +184,7 @@ let hum = function(number) {
                         }
                     }
                 }
-            }
+
             }
         }
     }
@@ -199,6 +203,10 @@ let hum = function(number) {
                     string += ""
                 } else if (arrayFromStrNumber[i] === '1') {
                     switch(arrayFromStrNumber[i+1]) {
+                        case '0': {
+                            string += 'ten';
+                            break;
+                        }
                         case '1': {
                             string += 'eleven';
                             break;
@@ -274,7 +282,7 @@ let hum = function(number) {
                 }           
             }
             //обработка разряда единиц
-            if (i === 3) {
+            if (i === 2) {
                 if(arrayFromStrNumber[i] === '0') {
                     string += ""
                 } else {
@@ -362,13 +370,18 @@ function transition(num) {
 
 
 
+// console.log(hum(10))
+// console.log(hum(43))
+// console.log(hum(143))
+// console.log(hum(312))
+// console.log(hum(511))
+// console.log(hum(620))
+// console.log(hum(100))
+// console.log(hum(111))
+// console.log(hum(115))
+// console.log(hum(350))
+
 console.log(hum(3))
-console.log(hum(43))
-console.log(hum(143))
-console.log(hum(312))
-console.log(hum(511))
-console.log(hum(620))
-console.log(hum(100))
-console.log(hum(111))
-console.log(hum(115))
-console.log(hum(350))
+console.log(hum(23))
+console.log(hum(90))
+console.log(hum(523))
